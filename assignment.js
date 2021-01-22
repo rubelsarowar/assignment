@@ -63,7 +63,7 @@ function megaFriend(names) {
     }
     return largestName;
   }
-  var names = ['mahmud', 'emon','mithuShikder', 'sumaiya', 'rituAkter'];
+  var names = ['mahmud', 'emon','rubelSarowar', 'sumaiya', 'rituAkter'];
   var nameResult = megaFriend(names);
   console.log(nameResult);
 
