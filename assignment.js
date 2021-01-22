@@ -24,51 +24,50 @@ console.log (budgetCalculator (10 , 20 , 25));
 // hotelCost start here
 
 function hotelCost(days){
-    var totalAmount = 0;
+    var totalCost = 0;
         if( days <= 10){
-            totalAmount = days * 100;
+            totalCost = days * 100;
         }
         else if ( days <= 20){
-            var firstTenDays = 10 * 100;
             var remaining = days - 10;
-            var secondTenDays = remaining * 80;
-            totalAmount = firstTenDays + secondTenDays;
+            var days11To20 = remaining * 80;
+            totalCost = days0To10 + secondTenDays;
         }
         else{
-            var firstTenDays = 10 * 100;
-            var secondTenDays = 10 * 80;
-            var remaining = days - 20;
-            var remainingAllDays = remaining * 50;
-            totalAmount = firstTenDays + secondTenDays + remainingAllDays;
+            var days0To10 = 10 * 100;
+            var days11To20 = 10 * 80;
+            var days20up = days - 20;
+            var remainingAllDays = days20up * 50;
+            totalCost = days0To10 + days11To20 + remainingAllDays;
         }
-            return totalAmount;
+            return totalCost;
     
 }
-var allCost = hotelCost(25);
+var allCost = hotelCost(10);
 console.log(allCost);
 
-// hotelCost end
+// hotelCost end here
 
-// megaFriend start
+// megaFriend start here
 
 function megaFriend(names) {
-    var namesLength = 0;
-    var longestName = names[0];
+    var largeName = 0;
+    var largestName = names[0];
     
     for (var i = 0; i < names.length; i++) {  
               
-      if (names[i].length > namesLength) {
-        namesLength = names[i].length;
-        longestName = names[i];
+      if (names[i].length > largeName) {
+        largeName = names[i].length;
+        largestName = names[i];
       }
     }
-    return longestName;
+    return largestName;
   }
   var names = ['mahmud', 'emon', 'sagorKumar', 'sumaiya', 'rituAkter'];
-  var outPut = megaFriend(names);
-  console.log(outPut);
+  var nameResult = megaFriend(names);
+  console.log(nameResult);
 
-// megaFriend end
+// megaFriend end here
 
 
 
