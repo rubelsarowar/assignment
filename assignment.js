@@ -24,26 +24,27 @@ console.log (budgetCalculator (10 , 20 , 25));
 // hotelCost start here
 
 function hotelCost(days){
-    var totalCost = 0;
+    var totalAmount = 0;
         if( days <= 10){
-            totalCost = days * 100;
+            totalAmount = days * 100;
         }
         else if ( days <= 20){
+            var days0to10 = 10 * 100;
             var remaining = days - 10;
-            var days11To20 = remaining * 80;
-            totalCost = days0To10 + secondTenDays;
+            var days11to20 = remaining * 80;
+            totalAmount = days0to10 + days11to20;
         }
         else{
-            var days0To10 = 10 * 100;
-            var days11To20 = 10 * 80;
-            var days20up = days - 20;
-            var remainingAllDays = days20up * 50;
-            totalCost = days0To10 + days11To20 + remainingAllDays;
+            var days0to10 = 10 * 100;
+            var days11to20 = 10 * 80;
+            var remaining = days - 20;
+            var remainingAllDays = remaining * 50;
+            totalAmount = days0to10 + days11to20 + remainingAllDays;
         }
-            return totalCost;
+            return totalAmount;
     
 }
-var allCost = hotelCost(10);
+var allCost = hotelCost(25);
 console.log(allCost);
 
 // hotelCost end here
